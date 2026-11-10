@@ -1,0 +1,6 @@
+metric_name,treated_pre,treated_post,control_pre,control_post,did_effect
+handoff_completion_rate,0.932300,0.659800,0.898000,0.912500,-0.287000
+human_request_honor_rate,0.870200,0.586800,0.858500,0.871700,-0.296600
+p50_escalation_to_first_response_min,3.333400,6.658400,3.466700,3.316700,3.475000
+p90_escalation_to_first_response_min,5.050000,11.375000,5.333300,5.045000,6.613300
+queue_abandonment_rate,0.067700,0.340200,0.102000,0.087500,0.287000

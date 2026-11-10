@@ -1,0 +1,5 @@
+treatment_group,post_period,contacts,crm_reported_resolution_rate,verified_no_repeat_resolution_rate,optimism_gap
+control,f,1281,0.8579,0.7947,0.0632
+control,t,1797,0.8531,0.7930,0.0601
+treatment,f,1335,0.8554,0.7858,0.0697
+treatment,t,1532,0.7715,0.6155,0.1560

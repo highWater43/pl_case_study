@@ -1,0 +1,5 @@
+treatment_group,post_period,mature_issue_episodes,reordered_28d_episodes,observed_28d_reorder_rate,avg_days_to_next_order,right_censored_episodes
+control,f,4552,4131,0.9075,8.49,0
+control,t,1757,1638,0.9323,8.00,4025
+treatment,f,4581,4177,0.9118,8.48,0
+treatment,t,1811,1648,0.9100,7.86,4109

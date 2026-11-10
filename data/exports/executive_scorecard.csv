@@ -1,0 +1,14 @@
+metric_name,display_name,metric_type,direction_of_good,treated_pre,treated_post,control_pre,control_post,did_effect,did_effect_relative_to_treated_pre,directional_assessment
+cancellation_rate,Order cancellation rate,counter,down,0.028617,0.033625,0.030646,0.032688,0.002967,0.103669,worsened
+chargebacks_per_1000_orders,"Chargebacks per 1,000 orders",counter,down,8.036479,15.907500,6.435913,7.626271,6.680663,0.831292,worsened
+late_delivery_rate,Late-delivery rate,counter,down,0.306979,0.326413,0.312350,0.319921,0.011863,0.038643,worsened
+contacts_per_1000_orders,"Contacts per 1,000 orders",driver,neutral,105.555396,97.891775,102.936892,117.391225,-22.117954,-0.209539,diagnostic_only
+handling_cost_per_order,Direct handling cost per order,driver,down,0.452892,0.239533,0.446217,0.506550,-0.273692,-0.604320,improved
+abandonment_rate,Contact abandonment rate,guardrail,down,0.086429,0.215267,0.091013,0.079258,0.140592,1.626669,worsened
+average_csat,Average CSAT,guardrail,up,3.947708,3.447646,3.927596,3.874442,-0.446908,-0.113207,worsened
+repeat_contact_rate,Repeat-contact order rate,guardrail,down,0.115483,0.242163,0.111233,0.128879,0.109033,0.944148,worsened
+verified_resolution_rate,Verified resolution rate,guardrail,up,0.786567,0.621988,0.797433,0.794300,-0.161446,-0.205254,worsened
+fully_loaded_failure_cost_per_order,Fully loaded failure cost per order,primary,down,1.572225,1.482113,1.436625,1.613200,-0.266688,-0.169624,improved
+support_adjusted_contribution_per_order,Support-adjusted contribution per order,primary,up,2.481142,2.565400,2.639275,2.435000,0.288533,0.116291,improved
+crm_resolution_rate,CRM-reported resolution rate,trust,up,0.854446,0.775788,0.858504,0.854058,-0.074212,-0.086855,worsened
+csat_response_rate,CSAT response rate,trust,neutral,0.354471,0.337288,0.363675,0.353096,-0.006604,-0.018631,diagnostic_only

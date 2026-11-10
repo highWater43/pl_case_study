@@ -1,0 +1,13 @@
+check_name,affected_rows,severity,handling_note,trust_status
+contacts_missing_journey_stream,0,error,Every deduplicated contact must have an event stream.,disclosed_and_handled
+invalid_duration_values,0,error,Must be zero.,disclosed_and_handled
+invalid_order_values,0,error,Must be zero.,disclosed_and_handled
+issue_order_orphans,0,error,Every synthetic order issue must map to one order.,disclosed_and_handled
+negative_journey_durations,0,error,All derived elapsed times must be non-negative.,disclosed_and_handled
+contacts_missing_customer_reference,244,warning,Exact order references remain usable.,disclosed_and_handled
+contacts_missing_order_reference,399,warning,Customer/time attribution is attempted when a trusted customer map exists.,disclosed_and_handled
+crm_resolution_disagreements,675,warning,Verified resolution requires a resolved end state and no seven-day follow-up.,disclosed_and_handled
+csat_nonresponses,3887,warning,CSAT is always paired with response rate.,disclosed_and_handled
+low_confidence_contact_attributions,345,warning,Included in primary results and separable for sensitivity analysis.,disclosed_and_handled
+raw_contact_duplicate_rows,99,warning,Duplicate extract rows are deduplicated by latest source_updated_at.,disclosed_and_handled
+unattributed_contacts,54,warning,Excluded from order-level causal metrics; retained in volume trust reporting.,disclosed_and_handled

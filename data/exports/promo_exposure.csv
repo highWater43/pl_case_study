@@ -1,0 +1,25 @@
+treatment_group,order_week,total_orders,freedel_orders,freedel_order_share,interpretation
+control,1,1995,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+control,2,2041,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+control,3,2012,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+control,4,2129,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+control,5,2109,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+control,6,2170,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+control,7,2208,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+control,8,2538,1760,0.6935,Descriptive balance check; the promotion is a post-launch national shock.
+control,9,2556,1731,0.6772,Descriptive balance check; the promotion is a post-launch national shock.
+control,10,2641,1775,0.6721,Descriptive balance check; the promotion is a post-launch national shock.
+control,11,2669,1821,0.6823,Descriptive balance check; the promotion is a post-launch national shock.
+control,12,2698,1812,0.6716,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,1,2032,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,2,2042,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,3,2083,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,4,2205,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,5,2116,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,6,2170,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,7,2244,0,0.0000,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,8,2590,1788,0.6903,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,9,2660,1786,0.6714,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,10,2655,1807,0.6806,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,11,2649,1820,0.6871,Descriptive balance check; the promotion is a post-launch national shock.
+treatment,12,2729,1817,0.6658,Descriptive balance check; the promotion is a post-launch national shock.

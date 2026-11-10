@@ -1,0 +1,2 @@
+overall_status,passed_metrics,failed_metrics,waiting_metrics,failed_metric_names,decision_contract
+FAIL,1,9,0,"abandonment_rate, average_csat, chargebacks_relative_change, handoff_completion_rate, observed_28d_reorder_rate, p90_escalation_to_first_response_min, queue_abandonment_rate, repeat_contact_rate, verified_resolution_rate",The north star must pass and no hard guardrail may fail.

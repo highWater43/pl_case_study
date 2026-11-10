@@ -1,0 +1,11 @@
+owner,metric_name,observed_effect,threshold,rule,status,evidence_source
+CX Insights,average_csat,-0.446908,-0.20,effect >= threshold,FAIL,mart.fct_did_estimates
+Care Operations,handoff_completion_rate,-0.287000,-0.03,effect >= threshold,FAIL,mart.fct_ai_handoff_did
+Care Operations,p90_escalation_to_first_response_min,6.613300,2.00,effect <= threshold minutes,FAIL,mart.fct_ai_handoff_did
+Care Operations,queue_abandonment_rate,0.287000,0.02,effect <= threshold,FAIL,mart.fct_ai_handoff_did
+Customer Care,abandonment_rate,0.140592,0.02,effect <= threshold,FAIL,mart.fct_did_estimates
+Customer Care,repeat_contact_rate,0.109033,0.02,effect <= threshold,FAIL,mart.fct_did_estimates
+Customer Care,verified_resolution_rate,-0.161446,-0.03,effect >= threshold,FAIL,mart.fct_did_estimates
+Executive,support_adjusted_contribution_per_order,0.288533,0.05,effect >= threshold,PASS,mart.fct_did_estimates
+Finance,chargebacks_relative_change,0.831292,0.10,relative effect <= threshold,FAIL,mart.fct_did_estimates
+Loyalty,observed_28d_reorder_rate,-0.0266,-0.02,effect >= threshold,FAIL,mart.fct_loyalty_did

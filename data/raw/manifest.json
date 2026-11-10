@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "customer_map_raw_rows": 7236,
+    "experiment_assignment": 8,
+    "finance_ledger": 2640,
+    "loyalty_scenario": 7200,
+    "order_issues": 8473,
+    "orders_ops": 55941,
+    "support_contacts_raw_rows": 6098,
+    "support_journey_events": 36999
+  },
+  "files": {
+    "customer_map.csv": "c8b5d6218309015f54beb11589661360f6f2e0929112e046d310735a6656e3bc",
+    "experiment_assignment.csv": "061306290535ebdfcdd1d9b668ad7dd1e3084024b4e3d10fe9b3364f4c3b26fe",
+    "finance_ledger.csv": "9fd21d0d2c03cd236ff900e100a25575c17dd0278818e83a567f1f997434f263",
+    "loyalty_scenario.csv": "60fcfc891b84520b25b39ab28b3a2e38ce7b073a3ea3f471043a442bc0ff8aea",
+    "order_issues.csv": "fad6c3e0d691f12c0fd5ebda5dc9bbdc4d3fbb03234141f18946e976c0d67dc7",
+    "orders_ops.csv": "2585f4ff22407a81a871c0a0ed4d98bdfbc7a1e7b2813b7f31d0906abed97bbb",
+    "support_contacts.csv": "d7d61219bd44376b72a201fdc35c24f5f709ad70316c2f765bfbad0a29da4156",
+    "support_journey_events.csv": "125dfedee3d161e1dfabd0e9cd63080b028e9fcc1e20b7b2a645ff83a16cb1ac"
+  },
+  "generated_at": "2026-11-06T13:00:00-05:00",
+  "scenario": "ForkDash Contact Us Simplification",
+  "seed": 20261106
+}

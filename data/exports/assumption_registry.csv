@@ -1,0 +1,13 @@
+assumption_id,category,assumption_text,encoded_value,sensitivity_or_limit
+A01,experiment,Treatment starts at the beginning of week 7 in four named cities.,2026-07-13; four treatment cities,Assignment is not claimed to be randomized.
+A02,economics,Contribution margin equals 12% of order value.,0.12,Provided case assumption.
+A03,economics,Handling costs follow the case brief.,AI-only 0.55; AI-agent 5.75; phone 6.80; email 3.10,Transferred AI cost is not double counted.
+A04,economics,Each chargeback has an 18 dollar fee in addition to disputed principal.,18.00,Provided case assumption.
+A05,resolution,Durable resolution requires a resolved end state and no same-order follow-up within seven days.,7 days,Sensitivity should test 72-hour and 14-day windows.
+A06,identity,Missing order references may use mapped customer identity plus temporal proximity.,order within -2 to +1 day of contact,Tagged 0.75 confidence and separable from exact matches.
+A07,loyalty,Observed loyalty proxy is another order within 28 days of an issue episode.,28 days,Late cohorts are excluded as right-censored.
+A08,finance,Chargebacks are assigned to originating order cohorts.,order week,Posting date retained for reconciliation and maturity.
+A09,AI,Technical containment means no human transfer; verified containment also requires durable resolution.,two separate metrics,Abandonment is never counted as verified containment.
+A10,handoff,Successful handoff requires an escalation and a first human response.,first_human_response_ts is not null,Agent acceptance alone is insufficient.
+A11,threshold,Illustrative decision thresholds are predeclared for the synthetic exercise.,mart.fct_launch_decision,Real leaders must approve tolerances before a live test.
+A12,privacy,All records are synthetic and remain local to this project.,seed 20261106,No case data is shared externally.

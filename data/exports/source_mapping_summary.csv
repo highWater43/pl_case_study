@@ -1,0 +1,6 @@
+source_name,mapping_status,record_count,included_in_order_economics,explanation
+finance ledger,exact order match,2640,t,"Refund, credit, payment-dispute, and fee rows supplied a valid order ID."
+finance ledger,not linked to an order,0,f,Unmatched finance rows would be excluded from order-level economics.
+support contacts,customer and time match,345,t,Contact lacked a usable order reference and was linked through a trusted customer map plus time proximity.
+support contacts,exact order match,5600,t,Contact supplied a valid order reference.
+support contacts,not linked to an order,54,f,Contact remains in volume reporting but its handling cost cannot be joined to order or finance outcomes.

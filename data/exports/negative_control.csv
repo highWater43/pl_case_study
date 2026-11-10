@@ -1,0 +1,5 @@
+treatment_group,post_period,avg_promised_duration_min,rationale
+control,f,40.0316,Promised duration is set before support contact and should not respond to the contact-policy change.
+control,t,40.0820,Promised duration is set before support contact and should not respond to the contact-policy change.
+treatment,f,40.1015,Promised duration is set before support contact and should not respond to the contact-policy change.
+treatment,t,40.0035,Promised duration is set before support contact and should not respond to the contact-policy change.

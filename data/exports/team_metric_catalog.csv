@@ -1,0 +1,19 @@
+team_name,metric_name,metric_role,business_question,governed_source,decision_use
+AI Product,technical_containment_rate,diagnostic,Which AI contacts avoided a human transfer?,mart.fct_ai_issue_scorecard,Never equate with resolution.
+AI Product,human_request_honor_rate,hard_guardrail,Did customers asking for a human actually receive one?,mart.fct_ai_issue_scorecard,Restore visible escalation when breached.
+AI Product,verified_containment_rate,primary_ai,Which issues did AI durably resolve without human help?,mart.fct_ai_issue_scorecard,Determine intent eligibility.
+COO,contacts_per_1000_orders,diagnostic,Did observable support demand change after normalizing for order volume?,mart.fct_executive_scorecard,Interpret with abandonment and downstream outcomes.
+COO,handling_cost_per_order,driver,Did direct support become cheaper?,mart.fct_executive_scorecard,"Operational efficiency, never standalone success."
+CX Insights,average_csat,guardrail,How satisfied were survey respondents?,mart.fct_executive_scorecard,Always pair with response rate and channel mix.
+Care Operations,handoff_completion_rate,hard_guardrail,Did an AI escalation lead to a human response?,mart.fct_handoff_funnel,Separate transfer creation from successful service.
+Care Operations,queue_abandonment_rate,hard_guardrail,Did customers abandon while waiting for an agent?,mart.fct_handoff_funnel,Diagnose staffing and routing failures.
+Care Operations,p90_escalation_to_first_response_min,service_level,How long did the slowest common handoffs wait for a human?,mart.fct_handoff_funnel,"Use percentiles, not only averages."
+Customer Care,abandonment_rate,hard_guardrail,Did customers give up before resolution?,mart.fct_executive_scorecard,Detect suppressed demand.
+Customer Care,repeat_contact_rate,hard_guardrail,Did customers need to return for help?,mart.fct_executive_scorecard,Diagnose false resolution and long-tail workload.
+Customer Care,verified_resolution_rate,hard_guardrail,Did the customer stay resolved for seven days?,mart.fct_executive_scorecard,Stop or redesign if the non-inferiority bound is breached.
+Data,contact_attribution_rate,trust_gate,Can contacts be traced to orders and customers?,audit.test_results,Freeze causal scorecard if coverage falls below 95%.
+Data,finance_maturity,trust_gate,Have delayed disputes had enough time to arrive?,mart.fct_finance_maturity_curve,Recent cohorts remain provisional.
+Executive,support_adjusted_contribution_per_order,north_star,Did the policy create more economic value per order after all observed failure costs?,mart.fct_executive_scorecard,Scale only when positive and every hard guardrail passes.
+Finance,chargebacks_per_1000_orders,hard_guardrail,Did customers bypass support and dispute more orders?,mart.fct_executive_scorecard,Stop rollout when mature relative increase exceeds tolerance.
+Finance,fully_loaded_failure_cost_per_order,primary_finance,"What did handling, recovery, disputes, and fees cost per order?",mart.fct_executive_scorecard,Compare only mature cohorts.
+Loyalty,observed_28d_reorder_rate,hard_guardrail,Did customers with an issue order again within 28 days?,mart.fct_loyalty_did,Use mature cohorts only.

@@ -1,0 +1,4 @@
+scenario_id,scenario_name,scenario_description,rescue_share,target_first_human_response_min,scenario_version,simulated_flag,mandatory_label
+FAST_HELP_CONSERVATIVE,Conservative faster-help scenario,Half of AI handoffs that currently end without a human response receive a response within five minutes.,0.5000,5.00,v1,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,Expected faster-help scenario,Seven out of ten AI handoffs that currently end without a human response receive a response within four minutes.,0.7000,4.00,v1,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,Strong faster-help scenario,Eight-and-a-half out of ten AI handoffs that currently end without a human response receive a response within three minutes.,0.8500,3.00,v1,t,Simulated scenario based on synthetic customer-journey data; not an observed result.

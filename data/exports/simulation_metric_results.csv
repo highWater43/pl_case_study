@@ -1,0 +1,43 @@
+scenario_id,metric_name,observed_treated_post,simulated_treated_post,simulated_change_vs_observed,observed_did_effect,simulated_did_effect,unit,simulated_flag,mandatory_label
+FAST_HELP_CONSERVATIVE,abandonment_rate,0.215267,0.173628,-0.041639,0.140592,0.098966,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,additional_human_hours,0.000000,11.427226,11.427226,,,hours across the six-week post period,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,average_csat,3.447646,3.641749,0.194103,-0.446908,-0.259985,1 to 5 score among respondents,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,chargebacks_per_1000_orders,15.907500,15.545967,-0.361533,6.680663,6.319123,"payment disputes per 1,000 orders",t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,completed_resolution_time_minutes,27.694143,26.465594,-1.228549,6.572836,5.344287,minutes among completed AI-to-human handoffs,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,fully_loaded_failure_cost_per_order,1.482113,1.482969,0.000856,-0.266688,-0.265844,USD per order,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,handling_cost_per_order,0.239533,0.237370,-0.002163,-0.273692,-0.275858,USD per order,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,handoff_completion_rate,0.659794,0.829897,0.170103,-0.287000,-0.116903,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,human_response_target_minutes,6.658400,5.000000,-1.658400,3.475000,,minutes,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,queue_abandonment_rate,0.340206,0.170103,-0.170103,0.287000,0.116903,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,repeat_contact_rate,0.242163,0.218964,-0.023199,0.109033,0.085827,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,support_adjusted_contribution_per_order,2.565400,2.564548,-0.000852,0.288533,0.287687,USD per order,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,total_cost_per_verified_resolution,24.715769,23.669328,-1.046441,5.828665,4.782225,USD per verified resolution,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_CONSERVATIVE,verified_resolution_rate,0.621988,0.657342,0.035354,-0.161446,-0.126094,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,abandonment_rate,0.215267,0.156554,-0.058713,0.140592,0.081891,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,additional_human_hours,0.000000,15.998115,15.998115,,,hours across the six-week post period,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,average_csat,3.447646,3.667875,0.220229,-0.446908,-0.233859,1 to 5 score among respondents,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,chargebacks_per_1000_orders,15.907500,15.401356,-0.506144,6.680663,6.174512,"payment disputes per 1,000 orders",t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,completed_resolution_time_minutes,27.694143,26.104506,-1.589637,6.572836,4.983198,minutes among completed AI-to-human handoffs,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,fully_loaded_failure_cost_per_order,1.482113,1.483313,0.001200,-0.266688,-0.265500,USD per order,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,handling_cost_per_order,0.239533,0.236504,-0.003029,-0.273692,-0.276725,USD per order,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,handoff_completion_rate,0.659794,0.897938,0.238144,-0.287000,-0.048862,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,human_response_target_minutes,6.658400,4.000000,-2.658400,3.475000,,minutes,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,queue_abandonment_rate,0.340206,0.102062,-0.238144,0.287000,0.048862,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,repeat_contact_rate,0.242163,0.209685,-0.032478,0.109033,0.076548,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,support_adjusted_contribution_per_order,2.565400,2.564204,-0.001196,0.288533,0.287343,USD per order,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,total_cost_per_verified_resolution,24.715769,23.282283,-1.433486,5.828665,4.395179,USD per verified resolution,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_EXPECTED,verified_resolution_rate,0.621988,0.671839,0.049851,-0.161446,-0.111597,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,abandonment_rate,0.215267,0.143584,-0.071683,0.140592,0.068922,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,additional_human_hours,0.000000,19.426282,19.426282,,,hours across the six-week post period,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,average_csat,3.447646,3.687470,0.239824,-0.446908,-0.214265,1 to 5 score among respondents,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,chargebacks_per_1000_orders,15.907500,15.292901,-0.614599,6.680663,6.066057,"payment disputes per 1,000 orders",t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,completed_resolution_time_minutes,27.694143,25.867670,-1.826473,6.572836,4.746362,minutes among completed AI-to-human handoffs,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,fully_loaded_failure_cost_per_order,1.482113,1.483571,0.001458,-0.266688,-0.265242,USD per order,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,handling_cost_per_order,0.239533,0.235854,-0.003679,-0.273692,-0.277374,USD per order,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,handoff_completion_rate,0.659794,0.948969,0.289175,-0.287000,0.002169,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,human_response_target_minutes,6.658400,3.000000,-3.658400,3.475000,,minutes,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,queue_abandonment_rate,0.340206,0.051031,-0.289175,0.287000,-0.002169,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,repeat_contact_rate,0.242163,0.202725,-0.039438,0.109033,0.069588,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,support_adjusted_contribution_per_order,2.565400,2.563946,-0.001454,0.288533,0.287085,USD per order,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,total_cost_per_verified_resolution,24.715769,23.002541,-1.713227,5.828665,4.115438,USD per verified resolution,t,Simulated scenario based on synthetic customer-journey data; not an observed result.
+FAST_HELP_STRONG,verified_resolution_rate,0.621988,0.682850,0.060862,-0.161446,-0.100585,share,t,Simulated scenario based on synthetic customer-journey data; not an observed result.

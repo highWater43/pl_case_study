@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+EXPORT_DIR="$PROJECT_DIR/data/exports"
+PG_SOCKET="$PROJECT_DIR/.postgres/socket"
+PG_PORT="${FORKDASH_PG_PORT:-55432}"
+PG_USER="${FORKDASH_PG_USER:-case_study_admin}"
+PG_DATABASE="${FORKDASH_PG_DATABASE:-forkdash_case}"
+
+mkdir -p "$EXPORT_DIR"
+PSQL=(psql -X -v ON_ERROR_STOP=1 -h "$PG_SOCKET" -p "$PG_PORT" -U "$PG_USER" -d "$PG_DATABASE")
+
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_executive_scorecard ORDER BY metric_type, metric_name) TO '$EXPORT_DIR/executive_scorecard.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_weekly_kpis ORDER BY city, order_week) TO '$EXPORT_DIR/weekly_kpis.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_data_trust ORDER BY severity, check_name) TO '$EXPORT_DIR/data_trust.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_source_mapping_summary ORDER BY source_name, mapping_status) TO '$EXPORT_DIR/source_mapping_summary.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_containment_reconciliation ORDER BY treatment_group, post_period) TO '$EXPORT_DIR/containment_reconciliation.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_loyalty_guardrails ORDER BY treatment_group, post_period) TO '$EXPORT_DIR/loyalty_guardrails.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_metric_relationships) TO '$EXPORT_DIR/metric_relationships.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_finance_maturity_curve ORDER BY order_week, treatment_group) TO '$EXPORT_DIR/finance_maturity.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_event_study ORDER BY metric_name, order_week) TO '$EXPORT_DIR/event_study.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_promo_exposure ORDER BY treatment_group, order_week) TO '$EXPORT_DIR/promo_exposure.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_negative_control ORDER BY treatment_group, post_period) TO '$EXPORT_DIR/negative_control.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_loyalty_did) TO '$EXPORT_DIR/loyalty_did.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.dim_metric ORDER BY metric_type, metric_name) TO '$EXPORT_DIR/metric_catalog.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.dim_team_metric ORDER BY team_name, metric_role, metric_name) TO '$EXPORT_DIR/team_metric_catalog.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_ai_issue_scorecard ORDER BY treatment_group, post_period, issue_type) TO '$EXPORT_DIR/ai_issue_scorecard.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_handoff_funnel ORDER BY treatment_group, post_period) TO '$EXPORT_DIR/handoff_funnel.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_ai_handoff_did ORDER BY metric_name) TO '$EXPORT_DIR/ai_handoff_did.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_wait_time_outcomes ORDER BY treatment_group, post_period, wait_time_band) TO '$EXPORT_DIR/wait_time_outcomes.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_launch_decision ORDER BY owner, metric_name) TO '$EXPORT_DIR/launch_decision.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_launch_decision_summary) TO '$EXPORT_DIR/launch_decision_summary.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.dim_number_provenance ORDER BY metric_name) TO '$EXPORT_DIR/number_provenance.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM audit.assumption_registry ORDER BY assumption_id) TO '$EXPORT_DIR/assumption_registry.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.dim_simulation_scenario ORDER BY scenario_id) TO '$EXPORT_DIR/simulation_scenarios.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.dim_simulation_assumption ORDER BY scenario_id, assumption_name) TO '$EXPORT_DIR/simulation_assumptions.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_sim_reference_rates ORDER BY issue_type, issue_severity) TO '$EXPORT_DIR/simulation_reference_rates.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM mart.fct_sim_metric_results ORDER BY scenario_id, metric_name) TO '$EXPORT_DIR/simulation_metric_results.csv' WITH (FORMAT csv, HEADER true)"
+"${PSQL[@]}" -c "\copy (SELECT * FROM audit.test_results ORDER BY test_category, test_name) TO '$EXPORT_DIR/test_results.csv' WITH (FORMAT csv, HEADER true)"
+
+printf 'Exported fact and dimension artifacts to %s.\n' "$EXPORT_DIR"

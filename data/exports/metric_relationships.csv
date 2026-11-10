@@ -1,0 +1,5 @@
+relationship,pearson_correlation,city_weeks,interpretation_limit
+handling_cost_per_order vs abandonment_rate,-0.653409,96,"Descriptive association, not causal proof."
+handling_cost_per_order vs chargebacks_per_1000_orders,-0.478960,96,"Descriptive association, not causal proof."
+verified_resolution_rate vs average_csat,0.623851,96,CSAT is respondent-only and may be selected.
+repeat_contact_rate vs chargebacks_per_1000_orders,0.414898,96,Finance lag and common issue severity can affect both metrics.

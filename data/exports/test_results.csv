@@ -1,0 +1,38 @@
+test_name,test_category,passed,observed_value,expectation,tested_at
+city_assignment_balance,experiment,t,4 treatment; 4 control,four treatment and four control cities,2026-11-10 10:07:03.255307-05
+city_week_panel_complete,experiment,t,96,8 cities x 12 order weeks = 96 rows,2026-11-10 10:07:03.255629-05
+event_study_complete,experiment,t,96,8 metrics x 12 weeks = 96 event-study rows,2026-11-10 10:07:03.277294-05
+promotion_timing_valid,experiment,t,0 pre rows with promo; 10 post rows with promo,zero pre-promotion rows and ten group-week rows after week 8,2026-11-10 10:07:03.278588-05
+assumption_registry_complete,governance,t,12,at least twelve explicit assumptions,2026-11-10 10:07:03.31416-05
+loyalty_scenario_labeled,governance,t,true,all modeled loyalty outputs explicitly labeled simulated,2026-11-10 10:07:03.275166-05
+number_provenance_complete,governance,t,8,at least eight published metrics with non-empty reproduction queries,2026-11-10 10:07:03.313617-05
+team_metric_contract_complete,governance,t,9 teams; 18 metric mappings,at least eight teams and eighteen governed mappings,2026-11-10 10:07:03.313916-05
+handoff_group_period_complete,mart,t,4 rows; 0 null groups,four treatment/control by pre/post rows,2026-11-10 10:07:03.292434-05
+launch_decision_contract_operational,mart,t,FAIL; 1 pass; 9 fail,one transparent overall status with both economic upside and guardrail failure,2026-11-10 10:07:03.296046-05
+mart_metric_completeness,mart,t,13 metrics; 0 null effects,13 non-null DID estimates,2026-11-10 10:07:03.268528-05
+mart_metrics_documented,mart,t,0,zero published DID metrics without catalog definitions,2026-11-10 10:07:03.276186-05
+contact_attribution_rate,referential_integrity,t,99.10%,at least 95% attributed,2026-11-10 10:07:03.255882-05
+finance_order_integrity,referential_integrity,t,0,zero orphan finance entries,2026-11-10 10:07:03.256842-05
+journey_event_coverage,referential_integrity,t,0,every staged contact has one journey-funnel row,2026-11-10 10:07:03.283374-05
+order_issue_integrity,referential_integrity,t,0,every issue maps to a known order,2026-11-10 10:07:03.285129-05
+abandonment_guardrail_encoded,scenario,t,0.140592,abandonment-rate DID is positive,2026-11-10 10:07:03.272813-05
+chargeback_countermetric_encoded,scenario,t,6.680663,chargeback-rate DID is positive,2026-11-10 10:07:03.27386-05
+direct_cost_savings_encoded,scenario,t,-0.273692,handling-cost DID is negative,2026-11-10 10:07:03.271735-05
+handoff_delay_harm_encoded,scenario,t,6.613300,P90 escalation-to-human-response DID exceeds two minutes,2026-11-10 10:07:03.293861-05
+observed_loyalty_guardrail_encoded,scenario,t,-0.0266,mature 28-day reorder DID is negative,2026-11-10 10:07:03.278807-05
+visible_contact_deflection_encoded,scenario,t,-22.117954,contact-rate DID is negative,2026-11-10 10:07:03.270643-05
+simulation_expected_abandonment_improves,simulation,t,0.340206 to 0.102062,expected scenario reduces queue abandonment,2026-11-10 10:07:03.330294-05
+simulation_expected_chargebacks_improve,simulation,t,15.907500 to 15.401356,expected scenario reduces payment disputes,2026-11-10 10:07:03.330727-05
+simulation_expected_handoff_improves,simulation,t,0.659794 to 0.897938,expected scenario increases handoff completion,2026-11-10 10:07:03.329989-05
+simulation_expected_resolution_improves,simulation,t,0.621988 to 0.671839,expected scenario increases verified resolution,2026-11-10 10:07:03.330479-05
+simulation_expected_resolution_time_improves,simulation,t,27.694143 to 26.104506,expected scenario reduces completed AI-to-human resolution time,2026-11-10 10:07:03.3306-05
+simulation_order_coverage,simulation,t,167823,one row per scenario and observed order,2026-11-10 10:07:03.314716-05
+simulation_scenarios_labeled,simulation,t,3 scenarios; all labeled=true,three explicitly labeled simulation scenarios,2026-11-10 10:07:03.314425-05
+simulation_staffing_gap_disclosed,simulation,t,not available,incremental staffing cost remains explicitly unavailable,2026-11-10 10:07:03.330862-05
+crm_resolution_optimism_visible,trust,t,0.0601,CRM rate exceeds verified rate in every segment,2026-11-10 10:07:03.274893-05
+contacts_primary_key_unique,uniqueness,t,5999/5999,all staged contact IDs unique after deduplication,2026-11-10 10:07:03.254106-05
+orders_primary_key_unique,uniqueness,t,55941/55941,all staged order IDs unique,2026-11-10 10:07:03.240263-05
+data_quality_errors_zero,validity,t,0,zero failing error-severity data-quality checks,2026-11-10 10:07:03.283202-05
+journey_duration_validity,validity,t,0,zero negative elapsed times,2026-11-10 10:07:03.290811-05
+normalized_duration_range,validity,t,0,zero implausible normalized durations,2026-11-10 10:07:03.261244-05
+orders_row_count,volume,t,55941,"at least 50,000 orders",2026-11-10 10:07:03.237196-05

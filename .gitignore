@@ -1,0 +1,16 @@
+.DS_Store
+.postgres/
+.venv-pdf/
+.build/
+tmp/
+source/*.pdf
+output/pdf/
+__pycache__/
+*.pyc
+
+# Local working history retained on disk but excluded from the shared repository
+local-only/
+artifacts/
+v2/
+pin-attempts-and-progress.md
+docs/what-to-bring-plan.md
